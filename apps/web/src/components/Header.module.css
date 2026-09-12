@@ -5,7 +5,9 @@
   right: 0;
   z-index: 40;
   padding-block: 1.1rem;
-  transition: background-color 220ms ease, box-shadow 220ms ease;
+  transition:
+    background-color 220ms ease,
+    box-shadow 220ms ease;
 }
 
 .headerScrolled {
@@ -42,7 +44,7 @@
   padding: 0;
   width: 70%;
 }
-.nav ul{
+.nav ul {
   display: flex;
   justify-content: space-between;
   align-items: center;

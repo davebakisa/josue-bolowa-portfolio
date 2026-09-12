@@ -36,9 +36,9 @@ export default function App() {
             <div className={styles.workIntro}>
               <h2 className="section-heading">Des marques qui se distinguent</h2>
               <p className="section-lede">
-                Quatre univers, quatre publics : de la restauration rapide à la
-                sécurité électronique, chaque logo est pensé pour tenir sur un
-                badge comme sur une devanture.
+                Quatre univers, quatre publics : de la restauration rapide à la sécurité
+                électronique, chaque logo est pensé pour tenir sur un badge comme sur une
+                devanture.
               </p>
             </div>
             {brandProjects.map((project, i) => (
@@ -58,8 +58,8 @@ export default function App() {
             <div className={styles.workIntro}>
               <h2 className="section-heading">Du produit à l'étagère</h2>
               <p className="section-lede">
-                Penser le packaging comme un support de marque à part entière :
-                lisible en rayon, cohérent en affichage, prêt pour la rue.
+                Penser le packaging comme un support de marque à part entière : lisible en
+                rayon, cohérent en affichage, prêt pour la rue.
               </p>
             </div>
             <ProjectCard project={packagingProject} onOpenImage={openImage} />
@@ -67,13 +67,16 @@ export default function App() {
         </section>
 
         <SectionDivider id="communication" index="03" label="communication" />
-        <section className={`${styles.workSection} ${styles.gallerySection}`} aria-label="Communication digitale">
+        <section
+          className={`${styles.workSection} ${styles.gallerySection}`}
+          aria-label="Communication digitale"
+        >
           <div className="container">
             <div className={styles.workIntro}>
               <h2 className="section-heading">Visible sur tous les écrans</h2>
               <p className="section-lede">
-                Affiches, statuts et campagnes : des visuels pensés pour être
-                compris en une seconde de défilement.
+                Affiches, statuts et campagnes : des visuels pensés pour être compris en
+                une seconde de défilement.
               </p>
             </div>
             {socialGalleries.map((g) => (
@@ -84,13 +87,16 @@ export default function App() {
         </section>
 
         <SectionDivider index="04" label="direction artistique" />
-        <section className={styles.workSection} aria-label="Direction artistique musicale">
+        <section
+          className={styles.workSection}
+          aria-label="Direction artistique musicale"
+        >
           <div className="container">
             <div className={styles.workIntro}>
               <h2 className="section-heading">Une image pour chaque voix</h2>
               <p className="section-lede">
-                Pochettes et visuels d'artistes : donner à chaque sortie
-                musicale une identité qui lui appartient.
+                Pochettes et visuels d'artistes : donner à chaque sortie musicale une
+                identité qui lui appartient.
               </p>
             </div>
             <Gallery {...musicProject} onOpenImage={openImage} />

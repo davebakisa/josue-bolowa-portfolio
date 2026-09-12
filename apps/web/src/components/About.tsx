@@ -1,9 +1,4 @@
-import {
-  experience,
-  languages,
-  profile,
-  tools,
-} from "../data/content";
+import { experience, languages, profile, tools } from "../data/content";
 import styles from "./About.module.css";
 
 export function About() {
@@ -13,9 +8,7 @@ export function About() {
         <p className="eyebrow">à propos</p>
         <div className={styles.grid}>
           <div className={styles.intro}>
-            <h2 className="section-heading">
-              Je m'appelle {profile.name.split(" ")[0]}
-            </h2>
+            <h2 className="section-heading">Je m'appelle {profile.name.split(" ")[0]}</h2>
             <p className="section-lede">{profile.bio}</p>
 
             <div className={styles.columns} style={{ marginTop: "2.5rem" }}>
@@ -52,9 +45,7 @@ export function About() {
               <h3>Contact</h3>
               <div className={styles.contactBlock}>
                 <a href={`mailto:${profile.email}`}>{profile.email}</a>
-                <a href={`tel:${profile.phone.replace(/\s/g, "")}`}>
-                  {profile.phone}
-                </a>
+                <a href={`tel:${profile.phone.replace(/\s/g, "")}`}>{profile.phone}</a>
               </div>
             </div>
           </div>

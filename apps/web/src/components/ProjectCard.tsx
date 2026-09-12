@@ -17,7 +17,11 @@ export function ProjectCard({ project, reverse, onOpenImage }: Props) {
           onClick={() => onOpenImage(project.image, project.client)}
           aria-label={`Agrandir la planche projet ${project.client}`}
         >
-          <img src={project.image} alt={`Déclinaisons de l'identité ${project.client}`} loading="lazy" />
+          <img
+            src={project.image}
+            alt={`Déclinaisons de l'identité ${project.client}`}
+            loading="lazy"
+          />
         </button>
         <div>
           <p className={styles.category} style={{ color: project.accent }}>

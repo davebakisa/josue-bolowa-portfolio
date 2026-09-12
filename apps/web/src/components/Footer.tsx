@@ -21,9 +21,7 @@ export function Footer() {
           <div className={styles.details}>
             <div className={styles.detailGroup}>
               <h4>Téléphone / WhatsApp</h4>
-              <a href={`tel:${profile.phone.replace(/\s/g, "")}`}>
-                {profile.phone}
-              </a>
+              <a href={`tel:${profile.phone.replace(/\s/g, "")}`}>{profile.phone}</a>
             </div>
             <div className={styles.detailGroup}>
               <h4>Basé à</h4>

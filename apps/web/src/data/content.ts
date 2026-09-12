@@ -33,7 +33,8 @@ export const experience = [
     year: "2026",
     role: "Graphiste designer",
     org: "Freelance",
-    detail: "Identité de marque, packaging et supports de communication pour des indépendants et petites entreprises.",
+    detail:
+      "Identité de marque, packaging et supports de communication pour des indépendants et petites entreprises.",
   },
   {
     year: "2025",

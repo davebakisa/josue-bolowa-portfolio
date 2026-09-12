@@ -121,7 +121,8 @@ button {
   content: "";
   position: absolute;
   inset: -20% -10%;
-  background-image: radial-gradient(
+  background-image:
+    radial-gradient(
       circle at 30% 30%,
       transparent 0 18%,
       var(--line) 18.4% 18.8%,

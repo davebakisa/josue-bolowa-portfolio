@@ -32,9 +32,7 @@ export function Header() {
   }, [menuOpen]);
 
   return (
-    <header
-      className={`${styles.header} ${scrolled ? styles.headerScrolled : ""}`}
-    >
+    <header className={`${styles.header} ${scrolled ? styles.headerScrolled : ""}`}>
       <div className={`container ${styles.inner}`}>
         <a
           href="#top"
@@ -77,9 +75,7 @@ export function Header() {
       {menuOpen && (
         <div className={styles.mobileMenu}>
           <div className={styles.mobileTop}>
-            <span className={`${styles.mark} ${styles.markOnDark}`}>
-              Josue Bolowa
-            </span>
+            <span className={`${styles.mark} ${styles.markOnDark}`}>Josue Bolowa</span>
             <button
               type="button"
               className={`${styles.toggle} ${styles.markOnDark}`}

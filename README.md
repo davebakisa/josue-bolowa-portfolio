@@ -37,14 +37,14 @@ Le site est servi sur http://localhost:5173.
 
 ## Scripts disponibles (racine)
 
-| Commande          | Description                                  |
-| ------------------ | --------------------------------------------- |
-| `pnpm dev`          | Lance le serveur de développement Vite        |
-| `pnpm build`        | Build de production (`apps/web/dist`)         |
-| `pnpm preview`      | Prévisualise le build de production           |
-| `pnpm lint`         | Vérifie le code avec ESLint                    |
-| `pnpm typecheck`    | Vérifie les types TypeScript sans émettre      |
-| `pnpm format`       | Formate tout le repo avec Prettier             |
+| Commande            | Description                                     |
+| ------------------- | ----------------------------------------------- |
+| `pnpm dev`          | Lance le serveur de développement Vite          |
+| `pnpm build`        | Build de production (`apps/web/dist`)           |
+| `pnpm preview`      | Prévisualise le build de production             |
+| `pnpm lint`         | Vérifie le code avec ESLint                     |
+| `pnpm typecheck`    | Vérifie les types TypeScript sans émettre       |
+| `pnpm format`       | Formate tout le repo avec Prettier              |
 | `pnpm format:check` | Vérifie le formatage sans modifier les fichiers |
 
 ## Déploiement (GitHub Actions → GitHub Pages)
@@ -65,8 +65,8 @@ Deux workflows sont fournis dans `.github/workflows/` :
    **Actions**) : le site est alors construit et déployé automatiquement.
 
 Le workflow utilise `actions/configure-pages` pour déterminer automatiquement
-le bon chemin de base (`VITE_BASE`), que le site soit publié comme *project
-page* (`https://<user>.github.io/<repo>/`) ou sur un domaine personnalisé —
+le bon chemin de base (`VITE_BASE`), que le site soit publié comme _project
+page_ (`https://<user>.github.io/<repo>/`) ou sur un domaine personnalisé —
 aucune configuration manuelle du chemin n'est nécessaire.
 
 ## Contenu & images
@@ -84,6 +84,6 @@ JPEG pour rester légers sur le web.
 - Aucun `pnpm-lock.yaml` n'est fourni dans cette archive (pas d'accès réseau
   au moment de la génération) : lancez `pnpm install` une première fois en
   local pour le générer, puis committez-le afin que `pnpm install
-  --frozen-lockfile` fonctionne dans les workflows CI/déploiement.
+--frozen-lockfile` fonctionne dans les workflows CI/déploiement.
 - Les polices (Anton, Caveat, Work Sans) sont chargées depuis Google Fonts
   dans `apps/web/index.html`.
