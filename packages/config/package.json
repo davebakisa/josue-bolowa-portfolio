@@ -1,0 +1,11 @@
+{
+  "name": "@josue/config",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Configuration TypeScript et ESLint partagée du monorepo.",
+  "main": "index.js",
+  "files": [
+    "tsconfig.base.json",
+    "eslint-preset.cjs"
+  ]
+}
