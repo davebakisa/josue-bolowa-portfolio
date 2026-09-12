@@ -8,8 +8,8 @@ export const profile = {
   phone: "+243 810 552 177",
   socials: [
     { label: "Instagram", href: "https://instagram.com" },
-    { label: "Facebook", href: "https://facebook.com" },
-    { label: "LinkedIn", href: "https://linkedin.com" },
+    { label: "Facebook", href: "https://facebook.com/josue.bolowa" },
+    { label: "LinkedIn", href: "https://linkedin.com/in/josue-bolowa-9bba12304/" },
     { label: "TikTok", href: "https://tiktok.com" },
   ],
 };
