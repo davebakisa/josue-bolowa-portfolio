@@ -1,0 +1,13 @@
+.workSection {
+  background: var(--paper);
+  padding-block: clamp(1rem, 4vw, 2rem) 0;
+}
+
+.workIntro {
+  padding-top: clamp(2.5rem, 6vw, 4rem);
+  max-width: 62ch;
+}
+
+.gallerySection {
+  background: var(--paper-soft);
+}

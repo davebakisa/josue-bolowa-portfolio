@@ -1,0 +1,48 @@
+.galleryWrap {
+  padding-block: clamp(3rem, 6vw, 4.5rem);
+  border-bottom: 1px solid var(--line);
+}
+
+.galleryWrap:last-child {
+  border-bottom: none;
+}
+
+.head {
+  max-width: 62ch;
+  margin-bottom: 1.6rem;
+}
+
+.head h3 {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  font-size: clamp(1.4rem, 3vw, 1.9rem);
+  margin: 0 0 0.5rem;
+}
+
+.head p {
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.figure {
+  border: none;
+  padding: 0;
+  background: none;
+  width: 100%;
+  cursor: zoom-in;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 18px 40px -24px rgba(21, 19, 15, 0.35);
+}
+
+.figure img {
+  width: 100%;
+  height: auto;
+  transition: transform 400ms ease;
+}
+
+.figure:hover img,
+.figure:focus-visible img {
+  transform: scale(1.015);
+}

@@ -10,5 +10,3 @@ coverage
 *.log
 .pnpm-store
 .turbo
-apps
-packages

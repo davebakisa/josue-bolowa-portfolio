@@ -1,0 +1,52 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 9, 7, 0.92);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(1rem, 4vw, 3rem);
+}
+
+.figure {
+  max-width: min(900px, 92vw);
+  max-height: 88vh;
+  margin: 0;
+}
+
+.figure img {
+  max-height: 88vh;
+  width: auto;
+  max-width: 100%;
+  margin-inline: auto;
+  border-radius: 4px;
+}
+
+.caption {
+  color: var(--paper);
+  text-align: center;
+  margin-top: 0.9rem;
+  font-size: 0.9rem;
+}
+
+.close {
+  position: absolute;
+  top: clamp(1rem, 3vw, 2rem);
+  right: clamp(1rem, 3vw, 2rem);
+  background: none;
+  border: 1px solid rgba(242, 237, 226, 0.4);
+  color: var(--paper);
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.close svg {
+  width: 18px;
+  height: 18px;
+}
