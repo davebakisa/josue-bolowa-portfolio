@@ -1,0 +1,22 @@
+{
+  "name": "josue-bolowa-portfolio",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Portfolio professionnel de Josue Bolowa — graphiste designer & monteur vidéos.",
+  "packageManager": "pnpm@9.12.0",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "pnpm --filter @jsoue/web dev",
+    "build": "pnpm --filter @jsoue/web build",
+    "preview": "pnpm --filter @jsoue/web preview",
+    "lint": "pnpm --filter @jsoue/web lint",
+    "typecheck": "pnpm --filter @jsoue/web typecheck",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "devDependencies": {
+    "prettier": "^3.3.3"
+  }
+}
