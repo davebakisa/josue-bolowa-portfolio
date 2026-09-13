@@ -18,7 +18,7 @@ export function ProjectCard({ project, reverse, onOpenImage }: Props) {
           aria-label={`Agrandir la planche projet ${project.client}`}
         >
           <img
-            src={project.image}
+            src={`${import.meta.env.BASE_URL}${project.image}`}
             alt={`Déclinaisons de l'identité ${project.client}`}
             loading="lazy"
           />

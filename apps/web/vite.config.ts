@@ -4,7 +4,7 @@ import react from "@vitejs/plugin-react";
 // `VITE_BASE` est injecté par le workflow GitHub Actions lors du déploiement
 // sur GitHub Pages (ex: "/josue-bolowa-portfolio/"). En local, on garde "/".
 export default defineConfig({
-  base: process.env.VITE_BASE ?? "/josue-bolowa-portfolio/",
+  base: "/josue-bolowa-portfolio/",
   plugins: [react()],
   build: {
     outDir: "dist",
