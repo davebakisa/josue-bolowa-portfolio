@@ -20,7 +20,7 @@ export function Gallery({ title, description, image, onOpenImage }: Props) {
         onClick={() => onOpenImage(image, title)}
         aria-label={`Agrandir : ${title}`}
       >
-        <img src={image} alt={title} loading="lazy" />
+        <img src={ `${import.meta.env.BASE_URL}${image}` } alt={title} loading="lazy" />
       </button>
     </div>
   );

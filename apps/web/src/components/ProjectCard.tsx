@@ -14,7 +14,7 @@ export function ProjectCard({ project, reverse, onOpenImage }: Props) {
         <button
           type="button"
           className={styles.figure}
-          onClick={() => onOpenImage(project.image, project.client)}
+          onClick={() => onOpenImage(`${import.meta.env.BASE_URL}${project.image}`, project.client)}
           aria-label={`Agrandir la planche projet ${project.client}`}
         >
           <img
